@@ -68,4 +68,54 @@ class RaceCar extends Car{
 }
 
 let formula = new RaceCar('F1','Ferrari','FFF-000',2007);
-formula.showData();
+//formula.showData();
+
+// let num = 6;
+// function square(n){
+//     return n*n;
+// }
+// console.log(square(num));
+// console.log(num);
+
+let a = {
+    foo:'bar',
+    x:5,
+    y:7,
+    z:13
+}
+
+function shallowCopy(source){
+    return Object.assign({},source);
+}
+
+let copied = shallowCopy(a);
+copied.foo = 'HAHAHHAAA! This is copy!';
+console.log(a);
+console.log(copied);
+console.log(a==copied);
+// function exercise(p){
+//     p.result = p.foo+p.bar;
+// }
+// exercise(a);
+// console.log(a.result);
+
+function greetingsToYou(name){
+    function seasonSelector(type){
+        switch(type){
+            case "New Year":
+                console.log("Happy new year "+name);
+                break;
+            case "Day":
+                console.log("Have a nice day "+name);
+                break;
+            default:
+                console.log("That's not valid season. You tried "+type);
+        }
+    }
+    return seasonSelector;
+}
+
+greeter = greetingsToYou("Juho");
+greeter();
+greeter("Day");
+greeter("New Year");
