@@ -47,13 +47,25 @@ function CruiseControl(speed=50){
     this.speed = speed;
 }
 
-let volvo = new Car('Volvo','V50','FKY-222');
-//console.log(volvo.cruise.speed);
-volvo.showData();
-volvo.IncreaseBy5();
-volvo.Increase(10);
-volvo.showData(); 
+// let volvo = new Car('Volvo','V50','FKY-222');
+// //console.log(volvo.cruise.speed);
+// volvo.showData();
+// volvo.IncreaseBy5();
+// volvo.Increase(10);
+// volvo.showData(); 
 
 class RaceCar extends Car{
-    
+    constructor(model,brand, registration,year){
+        super(model,brand,registration);
+        this.year = year;
+    }
+
+    showData(){
+        super.showData();
+        console.log(this.year);
+    }
+
 }
+
+let formula = new RaceCar('F1','Ferrari','FFF-000',2007);
+formula.showData();
