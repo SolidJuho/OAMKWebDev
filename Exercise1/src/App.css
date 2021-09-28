@@ -1,0 +1,33 @@
+.notification{
+    background-color: white;
+    margin-top: 16px;
+    margin-left: 128px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contentmain {
+    padding-top: 16px;
+    padding-bottom: 0;
+    border-top-width: 1px;
+    --border-opacity: 1;
+    border-color: #191919;
+    border-color: rgba(25,25,25,var(--border-opacity));
+}
+
+.bg{
+    background-color: rgb(233, 234, 237);
+}
+
+.main{
+    background-color: white;
+}
+.aside{
+    background-color: white;
+}

@@ -1,0 +1,9 @@
+.main{
+    width: 640px;
+    padding-top: 16px;
+    padding-bottom: 0;
+    border-top-width: 1px;
+    --border-opacity: 1;
+    border-color: #191919;
+    border-color: rgba(25,25,25);
+}

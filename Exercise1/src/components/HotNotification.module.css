@@ -1,0 +1,23 @@
+.headertext{
+    font-size: 18px;
+    color:white;
+    font-weight: 700;
+}
+
+.containerhot{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color:  rgba(65,150,164,9);
+    padding: 16px;
+    display: flex;
+    color:white;
+}
+
+.containerad{
+    display: flex;
+    padding: 16px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    color:white;
+    background-color: rgba(0,184,224);
+}
