@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import ReactDOM from "react-dom";
+import React from "react";
 import './App.css';
 import ProductComponent from './components/productComponent';
 import Grid from '@mui/material/Grid';
@@ -123,13 +125,29 @@ function App() {
     }
   ]
 
+  const [searchTerm, setSearchTerm] = React.useState("");
+  const handleChange = event => {
+    setSearchTerm(event.target.value);
+  };
+
   return (
-    <div className="notification">
-      <Grid container spacing={20}>
-    {
-      productsData.map(element=><ProductComponent data ={element}/>)
-    }           
-    </Grid>
+    <div>
+      <div className="SearchDiv">
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <Grid container spacing={10} marginTop={1} className="gr">
+        {
+          // productsData.map(element=><ProductComponent data ={element}/>)
+          productsData.filter(word => word.title.toLowerCase().includes(searchTerm.toLowerCase())).map(element=><ProductComponent data ={element}/>)
+        }           
+      </Grid>
+    </div>
   </div>
   );
 }

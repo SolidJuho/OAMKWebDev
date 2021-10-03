@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.SearchDiv{
+  margin-top: 10px;
+  height: 40px;
+  text-align: center;
+}
+.gr{
+  background-color: beige;
+}
