@@ -1,0 +1,38 @@
+.container{
+    width: 500px;
+    height: 500px;
+}
+.image{
+    width: 360px;
+    height: 320px;
+}
+.stars{
+    width: 90px;
+    height: 20px;
+}
+.reviews{
+    color:blue;
+}
+.title{
+    color:blue;
+}
+.linethrough{
+    text-decoration: line-through;
+}
+.small{
+    font-size: 10px;
+
+}
+.manifacturer{
+    font-size: 12px;
+}
+.stocklow{
+    color:crimson;
+    font-size: 14px;
+}
+.certified{
+    color:brown;
+}
+.ship{
+    color:dimgrey;
+}
